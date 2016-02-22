@@ -24,4 +24,13 @@ describe('KSmallest handles valid input and', ()=>{
     const expected = [1];
     expect(kSmallest(input,k)).toEqual(expected);
   });
+
+  it('finds the 3 smallest numbers in an input array',()=>{
+    const input = [4,6,1,7,22,0,-3,18,2];
+    const k = 3;
+    const expected = [-3,0,1];
+    expect(kSmallest(input,k)).toEqual(expected);
+  });
+
+
 });
