@@ -1,0 +1,1 @@
+Given an array of integers, find the `k` smallest elements.
