@@ -8,6 +8,7 @@ module.exports = function(input, k){
   if (k === input.length) return input;
   if (k <1 | k > input.length) throw "Invalid k!";
 
-  const sorted = input.sort((a,b) => a-b);
-  return sorted.slice(0,k);
+  return input
+      .sort((a,b) => a-b)
+      .slice(0,k);
 };
